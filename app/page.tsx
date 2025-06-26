@@ -6,20 +6,48 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden">
       {/* Header */}
-      <header className="container mx-auto px-6 py-8 relative z-10">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center animate-pulse">
-              <span className="text-white font-bold text-lg">F</span>
+      <header className="container mx-auto px-6 py-6 relative z-10">
+        <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <div className="relative">
+                <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center animate-pulse shadow-lg">
+                  <span className="text-white font-bold text-lg">F</span>
+                </div>
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white dark:border-gray-800 animate-pulse"></div>
+              </div>
+              <div>
+                <span className="text-xl font-bold text-gray-800 dark:text-white">Fatih Dursun</span>
+                <p className="text-xs text-gray-500 dark:text-gray-400">.NET Backend Developer</p>
+              </div>
             </div>
-            <span className="text-xl font-bold text-gray-800 dark:text-white">Fatih Dursun</span>
+            
+            <nav className="hidden md:flex items-center space-x-1">
+              <a href="/" className="px-4 py-2 rounded-lg text-blue-600 dark:text-blue-400 font-semibold bg-blue-50 dark:bg-blue-900/20 transition-all duration-300 hover:bg-blue-100 dark:hover:bg-blue-900/30">
+                Ana Sayfa
+              </a>
+              <a href="/cv" className="px-4 py-2 rounded-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+                CV
+              </a>
+              <a href="/cv#projects" className="px-4 py-2 rounded-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+                Projeler
+              </a>
+              <a href="/cv#contact" className="px-4 py-2 rounded-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+                İletişim
+              </a>
+              <div className="ml-4 flex items-center space-x-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span className="text-xs text-gray-500 dark:text-gray-400">Çevrimiçi</span>
+              </div>
+            </nav>
+
+            {/* Mobile Menu Button */}
+            <button className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+              <svg className="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
-          <nav className="hidden md:flex space-x-6">
-            <a href="/" className="text-blue-600 dark:text-blue-400 font-semibold">Ana Sayfa</a>
-            <a href="/cv" className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors">CV</a>
-            <a href="/cv#projects" className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors">Projeler</a>
-            <a href="/cv#contact" className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors">İletişim</a>
-          </nav>
         </div>
       </header>
 

@@ -1,0 +1,16 @@
+{
+  "name": "Fatih Dursun Üzer - .NET Backend Developer",
+  "short_name": "Fatih Dursun Üzer",
+  "description": ".NET Backend Developer & Cloud Specialist",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+} 
