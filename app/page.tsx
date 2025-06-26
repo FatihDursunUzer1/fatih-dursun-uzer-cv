@@ -179,8 +179,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="container mx-auto px-6 py-8 mt-20 border-t border-gray-200 dark:border-gray-700 relative z-10">
         <div className="text-center text-gray-600 dark:text-gray-400">
-          <p>&copy; 2024 Fatih Dursun. Tüm hakları saklıdır.</p>
-          <p className="mt-2 text-sm">Next.js ve Tailwind CSS ile geliştirildi</p>
+          <p>&copy; 2025 Fatih Dursun. Tüm hakları saklıdır.</p>
         </div>
       </footer>
 
